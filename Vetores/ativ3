@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+	setlocale (LC_ALL,"Portuguese_Brazil");
+	int idade=0, cont=0, soma=0, maior=0, menor=0, media=0;
+	printf("Digite a idade:\n");
+	scanf("%d", &idade);
+	
+	while (idade!=0){
+		cont=cont+1;
+		soma=idade+soma;
+		
+		if (idade!=0){
+			if (idade>maior){
+				maior=idade;
+				if (menor==0){
+					menor=idade;
+				}
+			}
+		if (idade<menor){
+			menor=idade;
+		}
+	}
+	printf("Digite a próxima idade:\n");
+		scanf("%d", &idade);
+	}
+	
+	media=soma/cont;
+	printf("A média das idades é: %d\n", media);
+	printf("A quantidade de pessoas do grupo é: %d\n", cont);
+	printf("A menor idade é: %d\n", menor);
+	printf("A maior idade é: %d\n", maior);
+	printf("\n");
+	
+	system("PAUSE");
+	return 0;
+}
