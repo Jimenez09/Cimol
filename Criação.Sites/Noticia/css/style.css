@@ -1,0 +1,30 @@
+body{
+    background-color:aqua;
+}
+#botao{
+    color: aqua;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background-color: black;
+}
+h1{
+    color:blue;
+    text-align: center;
+    font-size: 45px;
+}
+h2{
+    color:blueviolet;
+    text-align: center;
+    font-size: 35px;
+}
+p{
+    color:black;
+    text-align:center;
+    font-size: 18px;
+}
+img{
+    width: 50%;
+    margin-left: 25%;
+}
